@@ -1,8 +1,8 @@
-import { Tajawal } from "next/font/google";
+import { Tangerine } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 
-const inter = Tajawal({ subsets: ["latin"], weight: ['200', '300', '400', '500', '700', '800', '900']});
+const inter = Tangerine({ subsets: ["latin"], weight: ['400', '700']});
 
 export const metadata = {
   title: "Tamia's Beauty Parlour",
