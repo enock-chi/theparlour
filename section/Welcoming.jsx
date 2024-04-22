@@ -15,7 +15,7 @@ export const Welcoming = () => {
               <h2 className='text-pink-500 text-center font-bold text-[1.5rem]'>
                   <span className='text-teal-600'>Discover</span> the essence of bliss
               </h2>
-              <p className='text-black text-center pl-[8vw] pr-[8vw] text-[1.3rem]'>
+              <p className='text-black text-center mx-auto w-[70vw] text-[1.3rem]'>
                   Elevate your senses, embrace serenity, and unlock the radiant beauty the lies within
               </p>
           </div>

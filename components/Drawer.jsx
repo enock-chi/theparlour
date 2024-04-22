@@ -14,7 +14,7 @@ const Drawer = ({isVisible}) => {
   }
 
   return (
-    <div className='fixed z-100 top-[10.6vh] px-[10vw] pt-[7vh] w-[86vw] h-[80vh] backdrop-blur-lg right-[-85vw] rounded-sm' style={menuStyle}>
+    <div className='fixed z-100 top-[10.6vh] px-[10vw] pt-[7vh] w-[86vw] h-[100vh] backdrop-blur-lg right-[-85vw] rounded-sm' style={menuStyle}>
     <div className='relative left-[27vw]'>
       <i className="bi bi-clipboard2-fill text-black opacity-60 text-[3rem]"></i>
     </div>
