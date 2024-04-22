@@ -1,6 +1,7 @@
 import { Tangerine } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 const inter = Tangerine({ subsets: ["latin"], weight: ['400', '700']});
 
