@@ -27,7 +27,7 @@ export const Welcoming = () => {
         </div>
         <div className='relative w-full border-t border-black shadow-2xl'>
             <Image alt='The Journy is on' src={bookingImg} className=''/>
-            <Link className='absolute underline top-[26vh] text-white left-[35vw] text-[2.3rem]' href={"#"}>Book Now</Link>
+            <Link className='absolute underline top-[27.5vh] text-white left-[35vw] text-[2.3rem]' href={"#"}>Book Now</Link>
         </div>
         
     </div>

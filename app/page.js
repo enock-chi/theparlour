@@ -12,7 +12,7 @@ export default function Home() {
             <h3 className='font-extrabold text-[1.4rem] text-pink-500'>Parlour</h3>
           </div>
       </div>
-      <div className="w-[90vw] absolute pt-[19.9vh] left-[5vw]">
+      <div className="w-[90vw] absolute pt-[19.4vh] left-[5vw]">
         <Image alt='banner' src={banner} className=" right-[1vh]" />
       </div>
       <Welcoming />
