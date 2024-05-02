@@ -1,19 +1,18 @@
 import React from 'react'
 import Image from 'next/image'
-import imge from "../public/images/IMG_7057.png"
 import bookingImg from "../public/images/IMG7056.jpg"
 import Link from 'next/link'
 
 
 export const Welcoming = () => {
   return (
-    <div className='w-full h-screen flex flex-col items-center'>
+    <div className='w-full h-[60vh] flex flex-col items-center'>
         <hr className='border border-black border-[0.1px] w-full' />
         <div className='w-full flex items-center justify-center pt-[2vh] pb-[2vh]'>
           <div className='w-[80vw] h-auto border-r border-black'>
               <h1 className='text-center text-black text-[2.2rem] font-extrabold'>Welcome to my Parlour </h1>
               <h2 className='text-pink-500 text-center font-bold text-[1.5rem]'>
-                  <span className='text-teal-600'>Discover</span> the essence of bliss
+                  <span className='text-teal-600'>Discover</span> <span className='text-pink-600'>the</span> essence of bliss
               </h2>
               <p className='text-black text-center mx-auto w-[70vw] text-[1.3rem]'>
                   Elevate your senses, embrace serenity, and unlock the radiant beauty the lies within

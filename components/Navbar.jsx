@@ -3,7 +3,6 @@
 import React, {useState} from 'react'
 import Image from 'next/image'
 import Drawer from './Drawer'
-import "bootstrap-icons/font/bootstrap-icons.css";
 import logo from "../public/images/IMG_7066.jpg"
 
 export const Navbar = () => {
@@ -15,12 +14,12 @@ export const Navbar = () => {
     };
   
   return (
-    <div className='fixed z-50 flex justify-center items-center w-full h-[13vh]'>
+    <div className='fixed z-50 flex justify-center items-center w-screen h-[13vh]'>
       <div className='w-[95vw] flex items-center h-[8vh] bg-white rounded-2xl '>
-          <div className='w-1/2 pl-[2vw]'>
+          <div className='w-[47vw] pl-[2vw]'>
             <Image alt='logo' src={logo} className='w-[60px] h-[50px] rounded-full'/>
           </div>
-          <div className='w-1/2 h-[2vh] flex justify-center pr-[3vw]'>
+          <div className='w-[47vw] h-[2vh] flex justify-center pr-[3vw]'>
              { isMobileMenuOpen ? 
                 <i className="bi bi-menu-button-wide text-pink-500 text-[1.5rem] ml-auto" onClick={toggleMobileMenu}></i> 
                 :

@@ -7,7 +7,7 @@ const inter = Tangerine({ subsets: ["latin"], weight: ['400', '700']});
 
 export const metadata = {
   title: "Tamia's Beauty Parlour",
-  description: "Elevate your senses, embrace serenity, and unlock the radiant beauty the lies within;)",
+  description: "Elevate your senses, embrace serenity, and unlock the radiant beauty the lies within ;)",
 };
 
 export default function RootLayout({ children }) {

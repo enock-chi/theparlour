@@ -1,6 +1,7 @@
 import Image from "next/image";
 import banner from '../public/images/IMG_8831.png'
 import { Welcoming } from "@/section/Welcoming"
+import SelfCare from "@/section/SelfCare";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Image alt='banner' src={banner} className=" right-[1vh]" />
       </div>
       <Welcoming />
+      <SelfCare />
     </div>
   );
 }
