@@ -1,6 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
 import selfcare from '@/temp/selfcare'
 import Link from 'next/link'
+import banner from '@/public/images/IMG_70.jpg'
 
 const SelfCare = () => {
   return (
@@ -12,7 +14,8 @@ const SelfCare = () => {
               <Link key={i} className='text-black w-[30vw] text-center text-[1.5rem] font-extrabold rotate-[-90deg] hover:border border-black rounded-[1.1rem] shadow-xl ' href={'#'}>{item.name}</Link>
             ))}
           </div>
-          <div className='w-[80vw] h-[85vh] '>
+          <div className='w-[80vw] h-[85vh] relative'>
+              <Image src={banner} alt='https://unsplash.com/@fabulu75' style={{objectFit: "cover"}} className='h-full'/>
           </div>
         </div>
 

@@ -5,7 +5,7 @@ const navbar = [
   { name: 'Services', link: '/services' },
   { name: 'About Us', link: '/about' },
   { name: 'Contact Us', link: '/contact' },
-{ name: 'Bookings', link: '/' },
+  { name: 'Bookings', link: '/' },
 ];
 
 export default navbar;
