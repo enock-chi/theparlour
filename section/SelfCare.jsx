@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import selfcare from '@/temp/selfcare'
 import Link from 'next/link'
-import banner from '@/public/images/IMG_70.jpg'
+import banner from '@/public/images/IMG_70m.jpg'
 
 const SelfCare = () => {
   return (
