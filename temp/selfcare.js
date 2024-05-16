@@ -2,12 +2,12 @@ const selfcare = [
   {
     name: "Salon",
     icons: [
-      { name: "skin.png", link: "" },
-      { name: "nails.png", link: "" },
-      { name: "waxing.png", link: "" },
-      { name: "brows-lashes.png", link: "" },
-      { name: "massages.png", link: "" },
-      { name: "mens-grooming.png", link: "" },
+      { name: "skin.png", link: "Salon" },
+      { name: "nails.png", link: "Salon" },
+      { name: "waxing.png", link: "Salon" },
+      { name: "brows-lashes.png", link: "Salon" },
+      { name: "massages.png", link: "Salon" },
+      { name: "mens-grooming.png", link: "Salon" },
     ],
   },
   {

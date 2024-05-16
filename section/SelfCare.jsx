@@ -5,8 +5,10 @@ import Image from "next/image";
 import selfcare from "@/temp/selfcare";
 import Link from "next/link";
 import banner from "@/public/images/IMG_70.jpg";
+import { useRouter } from "next/navigation";
 
 const SelfCare = () => {
+  const router = useRouter();
   const [active, setActive] = useState(0);
   const [images, setImages] = useState(selfcare[active]);
   const [loaded, setLoaded] = useState([]);
@@ -67,6 +69,7 @@ const SelfCare = () => {
                     loaded[i] ? "" : "opacity-0"
                   }`}
                   onLoad={() => handleImageLoad(i)}
+                  onClick={() => router.push(`/booking/${item.link}`)}
                   priority
                 />
               </button>
