@@ -16,9 +16,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <div className="hidden md:flex w-full min-h-screen justify-center items-center">
+          <p className="text-black text-[2rem] rounded-2xl border p-5 inline-block">
+            Please Access this website using your phone.
+          </p>
+        </div>
+        <div className="block md:hidden">
+          <Navbar />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

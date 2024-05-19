@@ -7,8 +7,8 @@ import FooterDropDown from "./FooterDropDown";
 const Footer = () => {
   return (
     <div className="relative w-full h-auto pt-[2vh]">
-      <div className="w-full min-h-[50vh] bg-gray-500 rounded-t-[2rem] px-[5vw] pt-[5vh]">
-        <p className="mx-auto w-full h-auto inline-block py-[1vh] text-center font-bold text-[1.2rem]">
+      <div className="w-full min-h-[50vh] border border-black rounded-t-[2rem] px-[5vw] pt-[5vh]">
+        <p className="text-black mx-auto w-full h-auto inline-block py-[1vh] text-center font-bold text-[1.2rem]">
           Be the first to hear about new treatments, promotions and tips to get
           that feeling.
         </p>
