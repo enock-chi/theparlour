@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import bookingImg from "../public/images/IMG7056.jpg"
+import bookingImg from "../public/images/bookings.jpg"
 import Link from 'next/link'
 
 

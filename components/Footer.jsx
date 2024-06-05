@@ -1,13 +1,16 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import Link from "next/link";
 import FooterDropDown from "./FooterDropDown";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import { Switch } from "@headlessui/react";
+
 
 const Footer = () => {
   const [enabled, setEnabled] = useState(false);
+  const optionService = ["Salon", "Nailbar", "Men", "Shop"];
+  const optionParlour = ["Gallery", "Founders Word", "Think of options"];
+  const optionCompany = ["Stories", "Contact Us", "Option 3"];
 
   const classNames = (...classes) => {
     return classes.filter(Boolean).join(" ");
@@ -31,39 +34,15 @@ const Footer = () => {
           <span className="text-pink-500">Be the first </span>to hear about new
           treatments, promotions and tips to get that feeling.
         </p>
-        <div className="pb-[3vh]">
-          <FooterDropDown title="Services" options="" />
-          <FooterDropDown title="Your Parlour" options="" />
-          <FooterDropDown title="Company" options="" />
+        <div className="pb-[3vh] h-auto z-49 flex flex-col space-y-2">
+          <FooterDropDown title="Services" options={optionService} />
+          <FooterDropDown title="Your Parlour" options={optionParlour} />
+          <FooterDropDown title="Company" options={optionCompany} />
         </div>
         <hr className="w-full border-black" />
-        <div className="isolate bg-white pt-5">
-          <div
-            className="absolute h-[61rem] inline-block inset-x-0 top-[-13rem] -z-10 transform-gpu overflow-hidden blur-3xl "
-            aria-hidden="true"
-          >
-            <div
-              className="relative left-1/2 -z-10 aspect-[1155/678] w-[40.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] "
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-            />
-            <div
-              className="relative top-[-5vh] left-1/2 -z-10 aspect-[1155/678] w-[40.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] "
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-            />
-            <div
-              className="relative top-[-10vh] left-1/2 -z-10 aspect-[1155/678] w-[40.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-40rem)] "
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-            />
-          </div>
+        <div className="isolate bg-white pt-5 z-10 ">
+         
+
           <div className="w-full text-center">
             <h2 className="text-3xl font-bold tracking-tight text-black ">
               Contact Us
@@ -226,7 +205,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

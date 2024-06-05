@@ -34,13 +34,13 @@ const Drawer = ({ isVisible }) => {
       </ul>
 
       <div className="relative w-[40vw] h-[5vh] top-[5vh] left-[13vw] flex space-x-[10vw] rounded-lg pt-[0.7vh] bg-black opacity-60 items-center justify-center mt-[3vh]">
-        <Link href={"#"}>
+        <Link href={"https://www.tiktok.com/@tamia.s_beautypalour?_t=8iQoaH5gB8A&_r=1"}>
           <i className="bi bi-tiktok "></i>
         </Link>
         <Link href={"3"}>
           <i className="bi bi-telephone-fill"></i>
         </Link>
-        <Link href={"3"}>
+        <Link href={"https://www.instagram.com/tamia.s_beautypalour/?hl=en"}>
           <i className="bi bi-instagram"></i>
         </Link>
       </div>

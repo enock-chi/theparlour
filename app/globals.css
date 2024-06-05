@@ -31,3 +31,45 @@ body {
     text-wrap: balance;
   }
 }
+
+/* styles.css */
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+ 
+
+}
+
+.icon {
+  font-size: 1rem;
+  margin-left: auto;
+  color: black;
+  font-weight: 800;
+}
+
+.inline-black {
+  display:flex;
+}
+
+.dropdown-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  /* Adjust as needed */
+  border: 1px solid #ccc;
+  /* Adjust as needed */
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
