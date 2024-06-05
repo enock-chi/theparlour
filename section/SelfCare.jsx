@@ -3,9 +3,8 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import selfcare from "@/temp/selfcare";
-import Link from "next/link";
-import banner from "@/public/images/IMG_70.jpg";
 import { useRouter } from "next/navigation";
+import banner from "@/public/images/IMG_70.jpg";
 
 const SelfCare = () => {
   const router = useRouter();
@@ -59,17 +58,17 @@ const SelfCare = () => {
               <button
                 key={i}
                 className="backdrop-blur-lg flex items-center justify-center rounded-2xl border border-white"
+                onClick={() => router.push(`/booking/${item.link}`)}
               >
                 <Image
                   src={`/images/${item.name}`}
-                  alt=""
+                  alt={item.name}
                   width={200}
                   height={200}
-                  className={`image transition-opacity duration-[2s] ${
-                    loaded[i] ? "" : "opacity-0"
+                  className={`transition-opacity duration-2000 ${
+                    loaded[i] ? "opacity-100" : "opacity-0"
                   }`}
                   onLoad={() => handleImageLoad(i)}
-                  onClick={() => router.push(`/booking/${item.link}`)}
                   priority
                 />
               </button>

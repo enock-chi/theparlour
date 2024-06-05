@@ -37,9 +37,11 @@ const Drawer = ({ isVisible }) => {
         <Link href={"https://www.tiktok.com/@tamia.s_beautypalour?_t=8iQoaH5gB8A&_r=1"}>
           <i className="bi bi-tiktok "></i>
         </Link>
-        <Link href={"3"}>
-          <i className="bi bi-telephone-fill"></i>
-        </Link>
+       <Link href="tel:+27679248416">
+      <a>
+        <i className="bi bi-telephone-fill"></i>
+      </a>
+    </Link>
         <Link href={"https://www.instagram.com/tamia.s_beautypalour/?hl=en"}>
           <i className="bi bi-instagram"></i>
         </Link>
