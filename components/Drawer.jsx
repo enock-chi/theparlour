@@ -5,11 +5,17 @@ import { useRouter } from "next/navigation";
 import navbar from "@/temp/navbar";
 import Link from "next/link";
 
-const Drawer = ({ isVisible }) => {
+const Drawer = ({ isVisible, onClose, setIsMobileMenuOpen }) => {
   const router = useRouter();
   const menuStyle = {
     transform: isVisible ? "translateX(0)" : "translateX(-85vw)",
     transition: "transform 1s ease",
+  };
+
+  const handleLinkClick = (link) => {
+    onClose();
+    setIsMobileMenuOpen(prev => !prev);
+    router.push(link);
   };
 
   return (
@@ -26,7 +32,7 @@ const Drawer = ({ isVisible }) => {
             key={item.name}
             className="bg-black opacity-60 rounded-lg h-auto pl-[3vw] flex items-center"
           >
-            <Link href={item.link} className="text-[1.8rem]">
+            <Link href={item.link} className="text-[1.8rem]" onClick={() => handleLinkClick(item.link)}>
               {item.name}
             </Link>
           </li>
@@ -34,15 +40,13 @@ const Drawer = ({ isVisible }) => {
       </ul>
 
       <div className="relative w-[40vw] h-[5vh] top-[5vh] left-[13vw] flex space-x-[10vw] rounded-lg pt-[0.7vh] bg-black opacity-60 items-center justify-center mt-[3vh]">
-        <Link href={"https://www.tiktok.com/@tamia.s_beautypalour?_t=8iQoaH5gB8A&_r=1"}>
+        <Link href={"https://www.tiktok.com/@tamia.s_beautypalour?_t=8iQoaH5gB8A&_r=1"} target="_blank" rel="noopener noreferrer" onClick={onClose}>
           <i className="bi bi-tiktok "></i>
         </Link>
-       <Link href="tel:+27679248416">
-      <a>
-        <i className="bi bi-telephone-fill"></i>
-      </a>
-    </Link>
-        <Link href={"https://www.instagram.com/tamia.s_beautypalour/?hl=en"}>
+        <Link href="tel:+27679248416" target="_blank" rel="noopener noreferrer" onClick={onClose}>
+          <i className="bi bi-telephone-fill"></i>
+        </Link>
+        <Link href="https://www.instagram.com/tamia.s_beautypalour/?hl=en" target="_blank" rel="noopener noreferrer" onClick={onClose}>
           <i className="bi bi-instagram"></i>
         </Link>
       </div>

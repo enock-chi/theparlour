@@ -12,7 +12,7 @@ const FooterDropDown = ({ title, options }) => {
     <div className="inline-block relative w-full">
       <button className="button w-full" onClick={toggleDropdown}>
         {title}
-        <i className="bi bi-caret-down icon ml-1"></i>
+        <i className={`bi bi-caret-down icon ml-1` }></i>
       </button>
       <div
         // TailwindCSS classes for transition and overflow handling
