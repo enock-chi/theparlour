@@ -6,27 +6,34 @@ import images from '@/temp/carousel';
 import Masonry from 'react-masonry-css';
 
 const Page = () => {
+  const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1
+  };
+
   return (
-    <div className='w-full h-auto'>
-      <div className='w-full h-auto pt-[11vh]'>
-        <Masonry
-          breakpointCols={2}
-          className="my-masonry-grid"
-          columnClassName="my-masonry-grid_column"
-        >
-          {images.map((image, index) => (
-            <div key={index} className="relative w-full" style={{ paddingBottom: '56.25%' }}> {/* 16:9 Aspect Ratio */}
+    <div className='w-full h-auto pt-[11vh]'>
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid_column"
+      >
+        {images.map((image, index) => (
+          <div key={index} className="relative w-full mb-4">
+            <div className="relative w-full pb-[56.25%] overflow-hidden rounded-lg shadow-lg"> {/* Adjusted for aesthetics */}
               <Image
                 src={image.link}
                 alt={image.alt}
                 layout="fill"
-                objectFit="fit"
+                objectFit="cover"
                 className="absolute inset-0"
               />
             </div>
-          ))}
-        </Masonry>
-      </div>
+          </div>
+        ))}
+      </Masonry>
     </div>
   );
 }
